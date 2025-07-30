@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+    .congrats-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 280px;
+      text-align: center;
+      flex-direction: column;
+    }
+    .pet-img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+    .rarity-icon {
+      width: 60px;
+      height: auto;
+      margin-top: 8px;
+    }
+    .username {
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffcc00;
+    }
+    .message {
+      font-size: 18px;
+      margin-top: 5px;
+    }
+    .fade {
+      animation: fadeInOut 4s ease-in-out forwards;
+    }
+    @keyframes fadeInOut {
+      0% { opacity: 0; }
+      10% { opacity: 1; }
+      90% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+  </style>
+</head>
+<body>
+<div class="congrats-container" id="congratsBox">
+  <img id="petImage" class="pet-img" src="" alt="Pet">
+  <div class="username" id="usernameText">@username</div>
+  <div class="message" id="messageText">has claimed a pet!</div>
+  <img id="rarityIcon" class="rarity-icon" src="" alt="Rarity">
+</div>
+<div style="max-width: 500px; margin: auto; font-family: 'Comic Sans MS', sans-serif;">
+  <!-- Pet cards go here (omitted to save space) -->
+</div>
+<!-- JavaScript goes here (omitted to save space) -->
+</body>
+</html>
